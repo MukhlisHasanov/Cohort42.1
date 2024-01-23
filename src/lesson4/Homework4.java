@@ -1,7 +1,7 @@
 package lesson4;
 
 /** AIT-TR, cohort 42.1, Java Basic, Lesson #4
- * @Mukhlis_Hasanov
+ * @author Mukhlis_Hasanov
  * @version 22-Jan-2024
  */
 
