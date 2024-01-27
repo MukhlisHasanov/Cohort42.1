@@ -1,7 +1,13 @@
 package lesson3;
 
+/** AIT-TR, cohort 42.1, Java Basic, Homework3
+ * @author Mukhlis_Hasanov
+ * @version 28-Jan-2024
+ */
+
 public class Homework3 {
     public static void main(String[] args) {
+        
         //task #1
         int a = 0;
         int b = 1;
@@ -17,6 +23,7 @@ public class Homework3 {
         double m = (a + b + c + d + e + f + g + h + i + k) / 10.; {
             System.out.println("1. Average of 'm' is " + m);
         }
+
         //task #2
         int productA = 1000;
         int productB = 500;
@@ -24,6 +31,7 @@ public class Homework3 {
         int price = productA + productB - discount; {
             System.out.println("2. Total price with discount is " + ((productA + productB) - discount) + " EURO");
         }
+
         //task #3
         double Mn = 8.2;
         double Tu = 7.5;
@@ -34,6 +42,7 @@ public class Homework3 {
         double Sn = 8.8; {
             System.out.println("3. Average temperature in Baku is " + Math.round(((Mn + Tu + Wn + Th + Fr + St + Sn) / 7.0) * 100.0) / 100.0);
         }
+
        //task #4
     }
 }
