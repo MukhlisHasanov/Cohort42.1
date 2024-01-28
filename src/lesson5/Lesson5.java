@@ -10,8 +10,8 @@ import java.util.Random;
 public class Lesson5 {
     public static void main(String[] args) {
         int n = 8;
-        boolean a = n % 2 ==0;
-        boolean b = n % 3 ==0;
+        boolean a = n % 2 == 0;
+        boolean b = n % 3 == 0;
         boolean c = a && b;
 
         System.out.println(a + ", " + b + ", " + c);
