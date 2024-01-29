@@ -50,8 +50,6 @@ public class Homework6 {
                 System.out.println("2. Friday");
                 break;
             case 6:
-                System.out.println("2. Weekend");
-                break;
             case 7:
                 System.out.println("2. Weekend");
                 break;
