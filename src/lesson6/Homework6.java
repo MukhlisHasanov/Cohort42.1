@@ -67,6 +67,30 @@ public class Homework6 {
         }
 
         //task #4
-        
+        int l = 1;
+        do {
+           if (l % 5 == 0) {
+               System.out.println("4. " + l);
+           }
+            l++;
+        } while (l < 101);
+
+        //task #5
+        Scanner scan = new Scanner(System.in);
+        String input;
+        String secretWord = "hello";
+        int attempts = 0;
+
+        do {
+            System.out.println("Enter a 'hello': ");
+            input = scan.nextLine();
+            attempts++;
+            if (!input.equals(secretWord)) {
+                System.out.println("Wrong word! Try again");
+            }
+        } while (!input.equals(secretWord));
+
+        System.out.println("Good job!");
+        System.out.println("Count of tries: " + attempts);
     }
 }
