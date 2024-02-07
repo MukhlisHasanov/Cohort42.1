@@ -2,7 +2,7 @@ package lesson4;
 
 import java.util.Scanner;
 
-/** AIT-TR, cohort 42.1, Java Basic, Lesson #4
+/** AIT-TR, cohort 42.1, Java Basic, Homework #4
  * @author Mukhlis_Hasanov
  * @version 22-Jan-2024
  */
