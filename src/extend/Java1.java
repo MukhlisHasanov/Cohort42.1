@@ -11,7 +11,7 @@ public class Java1 {
         int age = scanner.nextInt(); {
             if (age >= 21) {
                 System.out.println("Which vodka do you want? ");
-                scanner.nextLine();
+        String vodka = scanner.nextLine();
             } else {
                 System.out.println("Sorry, we can't sell alcohol to you");
             }
