@@ -45,7 +45,7 @@ public class Lesson12 {
         }
     }
 
-    static void selectionSort (int[] a) {
+    public static void selectionSort (int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
             int min = a[i + 1];
             int minIdx = i + 1;

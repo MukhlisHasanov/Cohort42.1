@@ -14,7 +14,7 @@ public class Homework12 {
         System.out.println(p);
     }
 
-    static int linearSearch(int[] a, int n) {
+    public static int linearSearch(int[] a, int n) {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == n) {
                 return i;
@@ -29,8 +29,7 @@ public class Homework12 {
 
     //task #3
 
-
-    static int binarySearch(int[] a, int n) {
+    public static int binarySearch(int[] a, int n) {
         int left = 0, right = a.length - 1;
         while (left + 1 != right) {
             int middle = left + (right - left) / 2;
