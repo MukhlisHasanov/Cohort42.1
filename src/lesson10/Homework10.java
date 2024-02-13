@@ -2,6 +2,12 @@ package lesson10;
 
 import java.util.Scanner;
 
+/**
+ * AIT-TR, cohort 42.1, Java Basic, Homework #10
+ * @author Mukhlis_Hasanov
+ * @version 07-Feb-2024
+ */
+
 public class Homework10 {
     static int[] values = new int[26];
     public static void main(String[] args) {
