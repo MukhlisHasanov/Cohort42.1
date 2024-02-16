@@ -37,7 +37,7 @@ public class Homework13 {
         binarySearch(array, target);
 
         // Measuring the time taken for binary search
-        long binarySearchTime = System.currentTimeMillis() - startTime;
+        long binarySearchTime = System.currentTimeMillis() - sortTime;
         System.out.println("Binary search time: " + binarySearchTime + " ms");
     }
 
