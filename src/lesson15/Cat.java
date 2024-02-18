@@ -1,36 +1,38 @@
 package lesson15;
 
+/**
+ * AIT-TR, cohort 42.1, Java Basic, Lesson #15 Cat
+ * @author Mukhlis_Hasanov
+ * @version 16-Feb-2024
+ */
 public class Cat {
-    String name, color;
-    int age, energy, food, run, walkEnergy;
+    String name;
+    String color;
+    int age;
+    int volume;
+    int food;
 
-    public Cat(String name, String color, int age, int energy) {
+
+    public Cat(String name, String color, int age , int volume) {
         this.name = name;
         this.color = color;
         this.age = age;
-        this.energy = energy;
+        this.volume = volume;
+
     }
 
     public Cat() {
-    }
-
-    public void walk(int walkEnergy) {
-        this.walkEnergy = walkEnergy;
-    }
-
-    public int walkCommand() {
-        return energy - walkEnergy;
     }
 
     public void eat(int food) {
         this.food = food;
     }
 
-    public int satiated() {
-        return food * 100 / energy;
+    public double satiated() {
+        return (double) food / volume * 100;
     }
 
     public void voice() {
-        System.out.println("Meow");
+        System.out.println("Meow!");
     }
 }
