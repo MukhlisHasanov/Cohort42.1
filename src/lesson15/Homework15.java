@@ -1,9 +1,9 @@
 package lesson15;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, Lesson #7
+ * AIT-TR, cohort 42.1, Java Basic, Homework #15
  * @author Mukhlis_Hasanov
- * @version 29-Jan-2024
+ * @version 18-Feb-2024
  */
 
 import java.util.Scanner;
@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class Homework15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         SuperCat myCat = new SuperCat("Boris", "Black", 2, 100); // Create a cat with initial energy
         System.out.println("Hi! I am your digital cat. My name is "+ myCat.name);
         System.out.println("My color is " + myCat.color);
@@ -50,5 +49,32 @@ public class Homework15 {
         } while (myCat.energyLevel > 0 && myCat.energyLevel < 110); {
             System.out.println("Cat is DEAD!");
         }
+
+        // #Task Car
+        Car myCar = new Car("Nissan Skyline BNR-34 GT-R", "Grey Metallic", 1998, 70);
+        System.out.println();
+        myCar.carInfo();
+        System.out.print("Please, start engine: "); //write start to start engine
+        scanner.nextLine();
+        myCar.carVoice();
+        System.out.println();
+        myCar.startEngine();
+        System.out.println();
+
+        do {
+            System.out.print("Please choice an action [0-refuel, 1-drive, 2-soundOfPeace]: ");
+            int action = scanner.nextInt();
+            switch (action) {
+                case 0:
+                    myCar.refuel();
+                    break;
+                case 1:
+                    myCar.drive();
+                    break;
+                case 2:
+                    myCar.carVoice();
+                    break;
+            }
+        } while (myCar.fuelLevel > 0);
     }
 }

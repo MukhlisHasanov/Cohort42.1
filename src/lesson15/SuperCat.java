@@ -1,5 +1,11 @@
 package lesson15;
 
+/**
+ * AIT-TR, cohort 42.1, Java Basic, Homework #15 (Cat)
+ * @author Mukhlis_Hasanov
+ * @version 18-Feb-2024
+ */
+
 public class SuperCat {
     public int energyLevel, age;
     public String name, color;
