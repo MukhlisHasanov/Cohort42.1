@@ -6,8 +6,8 @@ package lesson15;
  * @version 18-Feb-2024
  */
 public class SuperCat {
-    public int energyLevel, age;
-    public String name, color;
+    int energyLevel, age;
+    String name, color;
 
     public SuperCat(String catName, String catColor, int catAge, int initialEnergy) {
         this.energyLevel = initialEnergy;

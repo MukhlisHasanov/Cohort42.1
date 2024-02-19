@@ -9,8 +9,8 @@ import java.util.Scanner;
  */
 public class Car {
     Scanner scan = new Scanner(System.in);
-    public int fuelLevel, productionYear, fuel, fuelConsumption = 10;
-    public String brand, color, engine;
+    int fuelLevel, productionYear, fuel, fuelConsumption = 10;
+    String brand, color, engine;
 
     public Car(String carBrand, String carColor, int carAge, int tankVolume) {
         this.fuelLevel = tankVolume;
