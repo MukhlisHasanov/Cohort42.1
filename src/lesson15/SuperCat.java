@@ -45,7 +45,6 @@ public class SuperCat {
         System.out.println("Meow");
     }
 
-
     public int getEnergyLevel() {
         return energyLevel;
     }
