@@ -7,7 +7,6 @@ import java.util.Scanner;
  * @author Mukhlis_Hasanov
  * @version 18-Feb-2024
  */
-
 public class Car {
     Scanner scan = new Scanner(System.in);
     public int fuelLevel, productionYear, fuel, fuelConsumption = 10;

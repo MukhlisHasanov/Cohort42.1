@@ -5,7 +5,6 @@ package lesson15;
  * @author Mukhlis_Hasanov
  * @version 18-Feb-2024
  */
-
 public class SuperCat {
     public int energyLevel, age;
     public String name, color;
