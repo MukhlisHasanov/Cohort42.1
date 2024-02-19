@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Car {
     Scanner scan = new Scanner(System.in);
-    public int fuelLevel, productionYear, fuel;
+    public int fuelLevel, productionYear, fuel, fuelConsumption = 10;
     public String brand, color, engine;
 
     public Car(String carBrand, String carColor, int carAge, int tankVolume) {
@@ -28,7 +28,7 @@ public class Car {
 
     public void drive() {
         System.out.println("How many km do you wanna drive [10...700]");
-        fuel = scan.nextInt() / 10;
+        fuel = scan.nextInt() / fuelConsumption;
         if (fuel < fuelLevel) {
             fuelLevel -= fuel;
             System.out.println("Fuel level after driving is " + getFuelLevel() + " litres");
