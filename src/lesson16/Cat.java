@@ -10,9 +10,15 @@ public class Cat {
 
     int realVolume;
 
-    public Cat(int maxVolume) {
+    int appetite;
+
+    String name;
+
+    public Cat(String name, int maxVolume, int appetite) {
         this.maxVolume = maxVolume;
         this.realVolume = 0;
+        this.appetite = appetite;
+        this.name = name;
     }
 
     public void eat(Plate plate) {
