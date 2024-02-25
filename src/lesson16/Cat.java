@@ -10,9 +10,6 @@ public class Cat {
 
     public int realVolume;
 
-    int appetite;
-
-    String name;
 
     public Cat(int maxVolume) {
         this.maxVolume = maxVolume;
