@@ -6,19 +6,17 @@ package lesson16;
  * @version 19-Feb-2024
  */
 public class Cat {
-    int maxVolume;
+    public int maxVolume;
 
-    int realVolume;
+    public int realVolume;
 
     int appetite;
 
     String name;
 
-    public Cat(String name, int maxVolume, int appetite) {
+    public Cat(int maxVolume) {
         this.maxVolume = maxVolume;
         this.realVolume = 0;
-        this.appetite = appetite;
-        this.name = name;
     }
 
     public void eat(Plate plate) {

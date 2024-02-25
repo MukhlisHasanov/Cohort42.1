@@ -1,5 +1,9 @@
 package lesson18;
 
+/** AIT-TR, cohort 42.1, Java Basic, Lesson #18 Robot
+ * @author Mukhlis_Hasanov
+ * @version 23-Feb-2024
+ */
 public class Robot {
 
     public static final String COMPANY_NAME = "Boston Dynamics";
