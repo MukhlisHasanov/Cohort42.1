@@ -12,7 +12,7 @@ public class Homework22 {
         animal.lay();
         animal.eat();
 
-        Tiger tiger = new Tiger("Tiger", "Mishka");
+        Tiger tiger = new Tiger("Tiger",  "Mishka", 5);
         System.out.println();
         System.out.println(tiger);
         tiger.lay();
