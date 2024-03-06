@@ -1,14 +1,12 @@
 package lesson22.homework22;
 
 public class Cat extends Animal {
-    private String name;
+    protected String name;
 
     public Cat(String animalType, String name) {
         super(animalType);
         this.name = name;
     }
-
-
 
     public String voice() {
         System.out.println("Mur...mur...");
@@ -19,6 +17,7 @@ public class Cat extends Animal {
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
+                ", animalType='" + animalType + '\'' +
                 '}';
     }
 }

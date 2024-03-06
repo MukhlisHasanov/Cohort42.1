@@ -1,7 +1,7 @@
 package lesson22.homework22;
 
 public class Animal {
-    private String animalType;
+    protected String animalType;
 
     public Animal(String animalType) {
         this.animalType = animalType;
@@ -17,8 +17,8 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "{" +
-                "This is " + animalType + '\'' +
+        return "Animal{" +
+                "animalType='" + animalType + '\'' +
                 '}';
     }
 }

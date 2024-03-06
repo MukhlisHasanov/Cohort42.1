@@ -21,7 +21,9 @@ public class Tiger extends Cat {
     @Override
     public String toString() {
         return "Tiger{" +
-                "age='" + age + '\'' +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                ", animalType='" + animalType + '\'' +
                 '}';
     }
 }
