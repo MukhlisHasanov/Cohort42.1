@@ -18,6 +18,5 @@ class Manager {
     }
 
     public void processOrder(Order order, List<FromWarehouse> shipments) {
-        // Логика обработки заказа и отгрузки товара
     }
 }

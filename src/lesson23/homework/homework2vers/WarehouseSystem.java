@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 public class WarehouseSystem {
     public static void main(String[] args) {
-        // Пример использования классов
         Product laptop = new Product(1, "Laptop", 1200.0, 50);
         ToWarehouse toWarehouse = new ToWarehouse(laptop, 10);
 
