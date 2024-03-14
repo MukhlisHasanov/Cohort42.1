@@ -3,11 +3,12 @@ package extend;
 import java.util.Arrays;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, Homework #12 ext
- * @author Mukhlis_Hasanov
- * @version 12-Feb-2024
+ * AIT-TR, cohort 42.1, Java Basic, hw #12 ext
+ *
+ * @author Sergey Iryupin
+ * @version 12-Feb-24
  */
-public class Stack {
+public class SimpleStack {
 
     static int[] stack = new int[10];
     static int idx = 0;
@@ -29,7 +30,7 @@ public class Stack {
         return null;
     }
 
-    public static String print() {
+    public static String arrayToString() {
         return Arrays.toString(Arrays.copyOf(stack, idx));
     }
 }
