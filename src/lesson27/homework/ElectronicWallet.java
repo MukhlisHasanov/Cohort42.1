@@ -1,18 +1,26 @@
 package lesson27.homework;
 
 public class ElectronicWallet implements PaymentSystem {
-    @Override
-    public void transferMoney() {
-        System.out.println("Transfering money");
+    private double balance;
+
+    public ElectronicWallet(double balance) {
+        this.balance = balance;
     }
 
     @Override
-    public void withdrawMoney() {
-        System.out.println("Withdrawing money");
+    public void transferMoney(double amount) {
+        balance += amount;
+        System.out.println("Transfering money $" + amount + " to electronic wallet");
     }
 
     @Override
-    public void checkBalance() {
-        System.out.println("Checking balance");
+    public void withdrawMoney(double amount) {
+        balance -= amount;
+        System.out.println("Withdrawing money $" + amount + " from electronic wallet");
+    }
+
+    @Override
+    public double checkBalance() {
+        return balance;
     }
 }
