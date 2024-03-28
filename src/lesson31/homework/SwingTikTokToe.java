@@ -14,6 +14,7 @@ import java.awt.event.MouseEvent;
 
 public class SwingTikTokToe extends JFrame {
     private char[][] table = new char[3][3];
+
     public static void main(String[] args) {
         new SwingTikTokToe();
     }
@@ -31,7 +32,7 @@ public class SwingTikTokToe extends JFrame {
             public void mouseClicked(MouseEvent e) {
 
                 int arrayX = e.getX() / (getWidth() / 3);
-                int arrayY =e.getY() / (getHeight() / 3);
+                int arrayY = e.getY() / (getHeight() / 3);
                 System.out.println("x:" + e.getX() + " y:" + e.getY());
                 System.out.println("x:" + arrayX + " y:" + arrayY);
                 table[arrayX][arrayY] = 'x';
@@ -42,7 +43,8 @@ public class SwingTikTokToe extends JFrame {
         JButton btnInit = new JButton("Init");
         JButton btnExit = new JButton("Exit");
 
-        btnInit.addActionListener(e -> {});
+        btnInit.addActionListener(e -> {
+        });
         btnExit.addActionListener(e -> System.exit(0));
 
         Panel btnPanel = new Panel();
@@ -73,6 +75,7 @@ public class SwingTikTokToe extends JFrame {
                     }
                     if (table[x][y] == 'o') {
                         // TODO нарисовать O
+                    }
                 }
             }
         }
