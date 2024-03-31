@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * AIT-TR, cohort 42.1, Java Basic, hw #9 ext
  *
- * @author Sergey Iryupin
+ * @author Mukhlis Hasanov
  * @version 09-Feb-24
  */
 public class HomeWork9Ext {
