@@ -1,7 +1,7 @@
 package lesson32;
 
 /**
- * AIT-TR, Cohort42.1, Java Basic Lesson #29
+ * AIT-TR, Cohort42.1, Java Basic Lesson #32
  * @author Muklis Hasanov
  * @version 20-Mar-24
  */
@@ -13,9 +13,18 @@ public class Lesson32 {
             case MONDAY:
                 System.out.println("Monday");
                 break;
-                // TODO all other days
+            case TUESDAY:
+                System.out.println("Tuesday");
+            case WEDNESDAY:
+                System.out.println("Wednesday");
+            case THURSDAY:
+                System.out.println("Thursday");
             case FRIDAY:
                 System.out.println("Friday");
+            case SATURDAY:
+                System.out.println("Saturday");
+            case SUNDAY:
+                System.out.println("Sunday");
                 break;
         }
         // before Java 5.0

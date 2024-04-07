@@ -10,6 +10,7 @@ public class HomeWork23 {
     public static void main(String[] args) {
         Product laptop = new Product("Lenovo T590", 1000);
         Product tv = new Product("Samsung 34'", 800);
+        Product phone = new Product("Iphone", 1500);
 
         Warehouse warehouse = new Warehouse();
         System.out.println(warehouse);
@@ -17,6 +18,7 @@ public class HomeWork23 {
         ToWarehouse toWarehouse = new ToWarehouse(1);
         toWarehouse.add(laptop, 50);
         toWarehouse.add(tv, 50);
+        toWarehouse.add(phone, 30);
         toWarehouse.toWarehouse(warehouse);
         System.out.println(warehouse);
 
