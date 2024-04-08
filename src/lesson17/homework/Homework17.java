@@ -7,9 +7,9 @@ package lesson17.homework;
 public class Homework17 {
     public static void main(String[] args) {
         Employee[] employees = {
-                new Employee("bob1", "p1", "e1", 1, 1000, 29),
-                new Employee("bob2", "p2", "e2", 2, 800, 40),
-                new Employee("bob3", "p3", "e3", 3, 4000, 43)
+                new Employee("bob1", "p1", "e1", "phone1", 1000, 29),
+                new Employee("bob2", "p2", "e2", "2", 800, 40),
+                new Employee("bob3", "p3", "e3", "3", 4000, 43)
         };
         for (Employee employee : employees) {
             if (employee.getAge() > 40) {
