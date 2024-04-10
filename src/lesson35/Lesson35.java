@@ -1,6 +1,10 @@
 package lesson35;
 
-
+/**
+ * AIT-TR, Cohort42.1, Java Basic Lesson #35
+ * @author Muklis Hasanov
+ * @version 8-Apr-24
+ */
 import lesson34.Person;
 
 import java.util.ArrayList;
