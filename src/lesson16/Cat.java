@@ -11,7 +11,7 @@ public class Cat {
     public int realVolume;
 
 
-    public Cat(int maxVolume) {
+    public Cat(String borya, int maxVolume, int i) {
         this.maxVolume = maxVolume;
         this.realVolume = 0;
     }
