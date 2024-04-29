@@ -8,6 +8,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * AIT-TR, Cohort42.1, Java Basic Homework #42
+ * @author Muklis Hasanov
+ * @version 10-Apr-24
+ */
 public class Homework42 {
     public static void main(String[] args) {
         // task #1

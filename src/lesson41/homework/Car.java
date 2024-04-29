@@ -1,16 +1,20 @@
-package lesson41;
+package lesson41.homework;
 
-public class Product {
+public class Car {
     String name, color;
     int price, year, id;
     protected static int idCounter = 0;
 
-    public Product(String name, int year, String color, int price) {
+    public Car(String name, int year, String color, int price) {
         this.name = name;
         this.color = color;
         this.price = price;
         this.year = year;
         this.id = idCounter;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -20,7 +24,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Car: " + name +
+        return "Id: " + id +
+                "\nCar: " + name +
                 "\nyear: " + year +
                 "\ncolor: " + color +
                 "\nprice: " + price + " EUR";
