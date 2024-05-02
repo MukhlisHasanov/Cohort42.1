@@ -2,8 +2,6 @@ package lesson33;
 
 import java.util.*;
 
-import static com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.iterator;
-
 /**
  * AIT-TR, Cohort42.1, Java Basic Lesson #33
  * @author Muklis Hasanov

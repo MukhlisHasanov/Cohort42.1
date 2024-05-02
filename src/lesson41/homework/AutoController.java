@@ -17,35 +17,28 @@ public class AutoController {
         int year, price, id;
         char cmd = 0;
         do {
-            System.out.println("CRUD app: [l]ist, [b]uy, [r]eturn, [p]rint, [e]xit: ");
+            System.out.println("CRUD app: [l]ist, [a]dd, [b]uy, e[x]it: ");
             cmd = scanner.nextLine().charAt(0);
             switch (cmd) {
-                case 'b':
+                case 'a':
                     System.out.println("Enter car name, car year, car color, car price ");
                     input = scanner.nextLine().split("&");
-                    if (input.length > 1) {
-                        id = Integer.valueOf(input[0].trim());
-                        name = String.valueOf(input[1].trim());
-                        year = Integer.valueOf(input[2].trim());
-                        color = String.valueOf(input[3].trim());
-                        price = Integer.valueOf(input[4].trim());
-                        service.add(name, year, color, price);
-                    } else {
-                        if (Integer.valueOf(input[0].trim()) == 0) {
-                            break;
-                        }
-                    }
+                    name = input[0].trim();
+                    year = Integer.valueOf(input[1].trim());
+                    color = input[2].trim();
+                    price = Integer.valueOf(input[3].trim());
+                    service.add(name, year, color, price);
                     break;
-                case 'r':
-                    System.out.println("Enter car name, car year, car color, car price ");
-                    input = scanner.nextLine().split("&");
-                    id = Integer.valueOf(input[0].trim());
-                    name = input[1].trim();
-//                    service.update(name, year);
-                case 'p':
+                case 'b':
+                    System.out.println("Enter car id: ");
+                    id = Integer.valueOf(scanner.nextLine());
+                    service.remove(id);
+                    break;
                 case 'x':
+                    break;
                 case 'l':
                     service.orderList();
+                    break;
                 default:
                     System.out.println("Undefined command: " + cmd);
             }
