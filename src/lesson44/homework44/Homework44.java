@@ -53,5 +53,6 @@ public class Homework44 {
         }
 
         System.out.println("The processing result is written in less.txt and more.txt");
+        System.out.println(userTransactions);
     }
 }
