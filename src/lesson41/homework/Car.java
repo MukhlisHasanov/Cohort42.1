@@ -10,7 +10,7 @@ public class Car {
         this.color = color;
         this.price = price;
         this.year = year;
-        this.id = idCounter;
+        this.id = ++idCounter;
     }
 
     public void setId(int id) {

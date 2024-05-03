@@ -1,9 +1,6 @@
 package lesson41.homework;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class AutoRepository {
     private Map<Integer, Car> carMap;
@@ -20,7 +17,9 @@ public class AutoRepository {
         return carMap.get(id);
     }
 
-
+    public Collection<Car> findAll() {
+        return carMap.values();
+    }
 
     public boolean delete(int id) {
         return carMap.remove(id) != null;
@@ -41,15 +40,5 @@ public class AutoRepository {
             new Car("Mitsubishi 3000GT VR-4", 1999, "Silver", 18000)
         ));
         cars.forEach(car -> save(car));
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nAutoSalon cars list:\n");
-        carMap.forEach((Integer, car) -> {
-            sb.append(car).append("\n");
-        });
-        return sb.toString();
     }
 }
